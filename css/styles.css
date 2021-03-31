@@ -1,0 +1,194 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left, .right {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    
+}
+
+.left {
+    justify-content: flex-start;
+    width: min-content;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.right {
+    justify-content: flex-end;
+    align-content: center;
+    padding-right: 23px;
+}
+
+.svg {
+    display: flex;
+    align-content: center;
+  
+}
+
+.left > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li {
+    padding: 0 12px;
+
+}
+
+.list {
+    padding-top: 20px;
+}
+
+.right > .list > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.right > .svg > svg {
+    width: 25px;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.svg > svg > path {
+    fill: rgb(128, 128, 128);
+}
+
+.svg {
+    padding-top: 8px;
+}
+
+.selfie {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+
+.selfie > img {
+    
+    width: 33px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 23vh;
+}
+
+.logo-img {
+
+}
+
+.logo-img > img {
+    width: 272px;
+}
+
+.container-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 26vh;
+    width: 100vw;
+}
+
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 570px;
+    height: 45px;
+    border: solid 1px rgba(211, 211, 211, 0.671);
+    border-radius: 25px;
+
+}
+
+.search-container:hover, .search-container:focus {
+    box-shadow: 0 0 5px lightgrey;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    padding-right: 30px;
+}
+
+.svg-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 12px;
+    padding-left: 5px;
+}
+
+.svg-cont > svg {
+    height: 20px;
+    width: auto;
+    
+    margin-left: 35px;
+}
+
+.svg-cont > svg > path {
+    fill: rgba(128, 128, 128, 0.712);
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar > input {
+    width: 500px;
+    height: 35px;
+    border: none;
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+}
+
