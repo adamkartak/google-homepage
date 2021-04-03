@@ -19,6 +19,12 @@ a:hover {
     text-decoration: underline;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -29,7 +35,7 @@ nav {
     width: fit-content;
     display: flex;
     flex-direction: row;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 13px;
     
 }
@@ -111,10 +117,6 @@ li {
     top: 23vh;
 }
 
-.logo-img {
-
-}
-
 .logo-img > img {
     width: 272px;
 }
@@ -184,11 +186,91 @@ li {
     height: 35px;
     border: none;
     font-size: 16px;
-    margin-right: 25px;
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30vh;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.btn {
+    background-color: rgb(250, 250, 250);
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 2px rgb(134, 134, 134);
+}
+
+.btn > p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
 }
 
 footer {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
     bottom: 0px;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(241, 241, 241);
+}
+
+.carbon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-right: 100px; */
+}
+
+.fab {
+    color: green;
+}
+
+.foot-list1, .foot-list2 {
+    min-width: 30%;
+}
+
+.foot-list1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text-stuff {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+}
+
+.foot-list2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.foot-list1 > ul, .foot-list2 > ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+}
+
+.foot-list1 > ul > li > a, .foot-list2 > ul > li > a, .text-stuff {
+    color: grey;
 }
 
