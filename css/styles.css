@@ -203,6 +203,10 @@ li {
     width: 300px;
 }
 
+.btn-container > a {
+    text-decoration: none;
+}
+
 .btn {
     background-color: rgb(250, 250, 250);
     padding: 8px 20px;
